@@ -1,0 +1,62 @@
+body {
+  background: #202734;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'work sans', 'roboto', '-apple-system', BlinkMacSystemFont, helvetica, ubuntu,noto,'segoe ui', arial,sans-serif;
+}
+
+#countdown, .downloads-box{
+  margin-top: 40px;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+  border: 1px solid #515C71;
+  border-radius: 8px;
+}
+
+.downloads-box {
+  width: 250px;
+  margin-right: 2rem;
+}
+
+.countdown__timebox, .downloads-box__platform {
+  height: 100%;
+	border-radius: 3px;
+  border-right: 1px solid #515C71;
+	display: inline-block;
+  margin-left: -9px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 115px;
+}
+
+.downloads-box__platform {
+  border: none;
+  width: auto;
+}
+
+.downloads-box__logo {
+  display: block;
+  margin: .75em auto .75em;
+}
+
+.downloads-box__button {
+  border-top: 1px solid #515C71;
+  margin-bottom: -1em;
+}
+
+.downloads-box__button a {
+  padding: .75rem 1rem;
+}
+
+.countdown__timebox:first-child, .downloads-box__platform:first-child {
+  margin-left: 0;
+}
+
+.countdown__timebox:last-child, .downloads-box__platform:last-child {
+  border: none;
+}
+
+.countdown__label{
+	padding-top: 5px;
+}

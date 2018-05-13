@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css">
+    <link rel="stylesheet" href="style.css?v=2">
+    <title>ZELTREZ — Coming Soon</title>
+  </head>
+  <body>
+
+    <div class="vh-100 dt w-100 tc bg-dark-gray white cover relative" style="background:url(bg.jpg) no-repeat center;">
+      <div class="dtc v-mid">
+        <div class="w-100 db mt5">
+          <img src="logo-zeltrez@2x.png" width="335" height="34" alt="Zeltrez logo">
+          <h3 class="code fw1 tracked f3">05.31.2018</h3>
+        </div>
+        <div id="countdown">
+          <div class="countdown__timebox dib ph3 pv3 ph4-ns pv3-ns">
+            <span class="countdown__time f3 f2-ns fw6 white-90 days"></span>
+            <div class="countdown__label f7 fw1 tracked ttu white-70">Days</div>
+          </div>
+          <div class="countdown__timebox dib ph3 pv3 ph4-ns pv3-ns">
+            <span class="countdown__time f3 f2-ns fw6 white-90 hours"></span>
+            <div class="countdown__label f7 fw1 tracked ttu white-70">HRS</div>
+          </div>
+          <div class="countdown__timebox dib ph3 pv3 ph4-ns pv3-ns">
+            <span class="countdown__time f3 f2-ns fw6 white-90 minutes"></span>
+            <div class="countdown__label f7 fw1 tracked ttu white-70">MINS</div>
+          </div>
+          <div class="countdown__timebox dib ph3 pv3 ph4-ns pv3-ns">
+            <span class="countdown__time f3 f2-ns fw6 white-90 seconds"></span>
+            <div class="countdown__label f7 fw1 tracked ttu white-70">SECS</div>
+          </div>
+        </div>
+
+        <div class="w-100 tc mt5 mb4">
+          <a href="https://www.youtube.com/watch?v=Tvyp_au-tIw" target="_blank" rel="noopener noreferrer">
+            <img src="btn-watch@2x.png" width="366" height="69" alt="Watch Preview">
+          </a>
+        </div>
+
+        <div class="w-100 tc mt3 mb3">
+          <a class="dib ph3" href="https://zel.cash" target="_blank" rel="noopener noreferrer">
+            <img src="home@2x.png" width="40" height="40" alt="Zelcash Website">
+          </a>
+          <a class="dib ph3" href="https://discord.gg/svDHPud" target="_blank" rel="noopener noreferrer">
+            <img src="discord@2x.png" width="40" height="40" alt="Zelcash Discord">
+          </a>
+          <a class="dib ph3" href="https://twitter.com/Zelcash" target="_blank" rel="noopener noreferrer">
+            <img src="twitter@2x.png" width="40" height="40" alt="Zelcash Twitter">
+          </a>
+          <a class="dib ph3" href="https://www.youtube.com/channel/UCphbdfb1MXYgUPsdhQPcnGw" target="_blank" rel="noopener noreferrer">
+            <img src="youtube@2x.png" width="40" height="40" alt="Zelcash Youtube">
+          </a>
+        </div>
+
+
+
+        <div class="w-100 tc db footer mt6 bottom-2 mb4">
+          <h4 class="fw3 white-70">© 2018 Zel Technologies. All rights reserved.</h4>
+          <a href="https://zel.cash" target="_blank" rel="noopener noreferrer">
+            <img src="logo-zelcash@2x.png" width="134" height="24" alt="Zelcash logo">
+          </a>
+        </div>
+      </div>
+    </div>
+
+  <script type="text/javascript">
+    function getTimeRemaining(endtime) {
+      var t = Date.parse(endtime) - Date.parse(new Date());
+      var seconds = Math.floor((t / 1000) % 60);
+      var minutes = Math.floor((t / 1000 / 60) % 60);
+      var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+      var days = Math.floor(t / (1000 * 60 * 60 * 24));
+      return {
+        'total': t,
+        'days': days,
+        'hours': hours,
+        'minutes': minutes,
+        'seconds': seconds
+      };
+    }
+
+    function initializeClock(id, endtime) {
+      var clock = document.getElementById(id);
+      var daysSpan = clock.querySelector('.days');
+      var hoursSpan = clock.querySelector('.hours');
+      var minutesSpan = clock.querySelector('.minutes');
+      var secondsSpan = clock.querySelector('.seconds');
+
+      function updateClock() {
+        var t = getTimeRemaining(endtime);
+
+        daysSpan.innerHTML = t.days;
+        hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+        minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+        secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+        if (t.total <= 0) {
+          clearInterval(timeinterval);
+        }
+      }
+
+      updateClock();
+      var timeinterval = setInterval(updateClock, 1000);
+    }
+
+    var deadline = new Date(Date.UTC(2018, 4, 31, 0, 0, 0));
+
+
+    initializeClock('countdown', deadline);
+
+  </script>
+
+  </body>
+</html>
