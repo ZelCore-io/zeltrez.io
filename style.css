@@ -1,9 +1,20 @@
 body {
-  background: #202734;
+  background: #202734 url(/bg-fade.jpg) no-repeat top center;
+  background-size: cover;
   font-size: 16px;
   line-height: 1.5;
   font-family: 'work sans', 'roboto', '-apple-system', BlinkMacSystemFont, helvetica, ubuntu,noto,'segoe ui', arial,sans-serif;
 }
+
+.card__cell__button:hover path {
+  fill: #fff;
+}
+
+.footer .link:hover g {
+  fill: #fff;
+}
+
+/* Below is for coming soon site, delete everything below this after launch */
 
 #countdown, .downloads-box{
   margin-top: 40px;
