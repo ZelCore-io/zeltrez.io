@@ -3,7 +3,12 @@ html {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: scroll;
+}
+
+/* fix background on mobile devices */
+@media only screenand (min-device-width : 768px) and (max-device-width : 1024px)  {
+   html { background-attachment: scroll !important; }
 }
 
 body {
