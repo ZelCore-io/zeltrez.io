@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700">
-    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css">
+    <link rel="stylesheet" href="/tachyons.min.css">
     <link rel="stylesheet" href="/style.css?v=3">
     <title>ZELTREZ — Multi-Asset Wallet</title>
   </head>
@@ -40,12 +40,12 @@
             <a href="/downloads" class="link db f5 light-silver hover-near-white">Release Notes</a>
           </div>
           <div class="card__cell pa4 bb b--mid-gray">
-            <span class="fw5">Windows</span>
-            <div class="f5 white-60">For 64-bit Windows 7+</div>
+            <span id="platform" class="fw5">Windows</span>
+            <div id="requirements" class="f5 white-60">For 64-bit Windows 7+</div>
           </div>
 
           <div class="card__cell pa4">
-            <a class="card__cell__button link bg-white blue hover-bg-blue hover-white bg-animate db fw6 f4 br2 pa3" href="zeltrez.exe">
+            <a id="download-link" class="card__cell__button link bg-white blue hover-bg-blue hover-white bg-animate db fw6 f4 br2 pa3" href="zeltrez.exe">
               <svg class="v-mid mr1" xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><title>Download Icon</title>
                 <path fill="#357edd" d="M13.6,7.53814714 L9.7155,7.53814714 L9.7155,2 L3.8845,2 L3.8845,7.53814714 L0,7.53814714 L6.8,14 L13.6,7.53814714 Z M0,16.4 L0,18 L13.6,18 L13.6,16.4 L0,16.4 Z" transform="translate(0 -2)"/>
               </svg>
@@ -149,13 +149,57 @@
       </div>
 
       <div class="w-100 tc db footer mt6 bottom-2 pb6">
-        <h4 class="fw3 white-50">© 2018 Zel Technologies. All rights reserved.</h4>
+        <h4 class="fw3 white-50">© <span id="year"></span> Zel Technologies. All rights reserved.</h4>
         <a class="link" href="https://zel.cash" target="_blank" rel="noopener noreferrer">
           <img class="mw4" src="/logo-zelcash-old.png" alt="Zelcash logo">
         </a>
       </div>
 
     </div>
+
+    <script type="text/javascript">
+      // get current year
+      var currentYear = document.getElementById('year');
+      currentYear.innerText = (new Date()).getFullYear();
+
+      // change download link based on user agent
+
+      var downloadLink = false;
+
+      // Find elements
+      var platformEl = document.getElementById('platform');
+      var requirementsEl = document.getElementById('requirements');
+      var downloadLinkEl = document.getElementById('download-link');
+
+      // Check if Mobile
+      if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/Android/i))) {
+          platformEl.innerText = "Windows";
+          requirementsEl.innerText = "For 64-bit Windows 7+";
+          downloadLinkEl.setAttribute('href', '/downloads/zeltrez.exe');
+      }
+
+      // Check if Mac
+      if ((navigator.userAgent.match(/Macintosh/))) {
+          platformEl.innerText = "MacOS";
+          requirementsEl.innerText = "For MacOS 10.9+";
+          downloadLinkEl.setAttribute('href', '/downloads/zeltrez.dmg');
+      }
+
+      // Check if Windows
+      if ((navigator.userAgent.match(/Windows/))) {
+          platformEl.innerText = "Windows";
+          requirementsEl.innerText = "For 64-bit Windows 7+";
+          downloadLinkEl.setAttribute('href', '/downloads/zeltrez.exe');
+      }
+
+      // Check if Linux
+      if ((navigator.userAgent.match(/Linux/))) {
+          platformEl.innerText = "Linux";
+          requirementsEl.innerText = ".AppImage";
+          downloadLinkEl.setAttribute('href', '/downloads/zeltrez.AppImage');
+      }
+
+    </script>
 
   </body>
 </html>
