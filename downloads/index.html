@@ -41,8 +41,8 @@
     <div class="vh-100 w-100 white">
 
       <div class="downloads w-100 pt5 pt6-l pa3 center tc">
-        <h3 class="code fw2 ttu tracked f3 mb0">1.0.0</h3>
-        <h4 class="fw2 ttu tracked f7 mb0 white-50">Last Updated: May 29th, 2018</h3>
+        <h3 class="code fw2 ttu tracked f3 mb0">1.0.1</h3>
+        <h4 class="fw2 ttu tracked f7 mb0 white-50">Last Updated: July 15th, 2018</h3>
 
         <div class="flex-none flex-l items-center justify-between mt4 mw8 center">
 
@@ -99,10 +99,73 @@
               </div>
             </div>
           </div>
-
         </div>
+
+        <div class="flex-none flex-l items-center justify-between mt4 mw8 center">
+
+                    <div class="w-100 tc ph3 mr3 mb5 mb0-l">
+                      <div class="card mw6 center tc f3 fw3 white-90 br3 ba b--mid-gray">
+                        <div class="card__cell pa4 bb b--mid-gray">
+                          <object class="downloads-box__logo pa3" type="image/svg+xml" data="/logo-tux.svg"></object>
+                          <span class="fw5">Linux</span>
+                          <div class="f5 white-60">.deb</div>
+                        </div>
+                        <div class="card__cell pa4">
+                          <a class="card__cell__button link bg-white blue hover-bg-blue hover-white bg-animate db fw6 f5 br2 pa3" href="downloads/zeltrez.deb">
+                            <svg class="v-mid mr1" xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><title>Download Icon</title>
+                              <path fill="#357edd" d="M13.6,7.53814714 L9.7155,7.53814714 L9.7155,2 L3.8845,2 L3.8845,7.53814714 L0,7.53814714 L6.8,14 L13.6,7.53814714 Z M0,16.4 L0,18 L13.6,18 L13.6,16.4 L0,16.4 Z" transform="translate(0 -2)"/>
+                            </svg>
+                            Download
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="w-100 tc ph3 mr3 mb5 mb0-l">
+                      <div class="card mw6 center tc f3 fw3 white-90 br3 ba b--mid-gray">
+                        <div class="card__cell pa4 bb b--mid-gray">
+                          <object class="downloads-box__logo pa3" type="image/svg+xml" data="/logo-windows.svg"></object>
+                          <span class="fw5">Windows</span>
+                          <div class="f5 white-60">For 64-bit Windows 7+</div>
+                          <div class="fw5 f5 white-60">Portable</div>
+                        </div>
+                        <div class="card__cell pa4">
+                          <a class="card__cell__button link bg-white blue hover-bg-blue hover-white bg-animate db fw6 f5 br2 pa3" href="downloads/zeltrez-portable.exe">
+                            <svg class="v-mid mr1" xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><title>Download Icon</title>
+                              <path fill="#357edd" d="M13.6,7.53814714 L9.7155,7.53814714 L9.7155,2 L3.8845,2 L3.8845,7.53814714 L0,7.53814714 L6.8,14 L13.6,7.53814714 Z M0,16.4 L0,18 L13.6,18 L13.6,16.4 L0,16.4 Z" transform="translate(0 -2)"/>
+                            </svg>
+                            Download
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+        </div>
+
       </div>
 
+      <div class="mw7 center mt5 mb5 tl">
+
+        <h4 class="fw2 ttu tracked f7 mb0 white-70">1.0.1 Release Notes</h4>
+        <p>Info</p>
+        <ul class="list white-70 fw2 pl0">
+          <li class="mb2">Version 1.0.1 provides new BitcoinZ daemon in order to stay on chain as of fork due to mining algorithm to Zhash. This update is mandatory for BitcoinZ full node users. During testing we have exporienced that local blockchain data might have to be deleted and ZelTreZ can not fixed that automatically. If you experience issues with BitcoinZ in full node mode, please check BitcoinZ debug.log file to indentify the error. This version also brings support to dump wallet for non privacy coins.</li>
+        </ul>
+        <p>Bugs</p>
+        <ul class="list white-70 fw2 pl0">
+          <li class="mb2">- Fixed hard QR code scanning.</li>
+          <li class="mb2">- Fixed typos.</li>
+          <li class="mb2">- Fixed ethereum server error.</li>
+        </ul>
+        <p>Features</p>
+        <ul class="list white-70 fw2 pl0">
+          <li class="mb2">- Added option to dump wallet for non privacy (zcash forks) coins.</li>
+          <li class="mb2">- Added option to select BTC as fiat currency.</li>
+          <li class="mb2">- Improved performance.</li>
+          <li class="mb2">- New BitcoinZ full node binaries.</li>
+          <li class="mb2">- Windows portable version of ZelTreZ now available on zeltrez.io.</li>
+          <li class="mb2">- deb package now available for Linux as well.</li>
+        </ul>
+      </div>
 
       <div class="mw7 center mt5 mb5 tl">
 
