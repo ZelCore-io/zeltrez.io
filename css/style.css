@@ -1,5 +1,5 @@
 html {
-  background: #202734 url(/bg-fade.jpg) no-repeat top center fixed;
+  background: #202734 url(../img/bg-fade.jpg) no-repeat top center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -14,7 +14,11 @@ html {
 body {
   font-size: 16px;
   line-height: 1.5;
-  font-family: 'work sans', 'roboto', '-apple-system', BlinkMacSystemFont, helvetica, ubuntu,noto,'segoe ui', arial,sans-serif;
+  font-family: 'Heebo', sans-serif;
+}
+
+header a {
+  font-weight: 500;
 }
 
 .card__cell__button {
