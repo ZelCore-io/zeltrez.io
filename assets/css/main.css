@@ -628,21 +628,6 @@ input, select, textarea {
 		position: relative;
 	}
 
-		.image:before {
-			pointer-events: none;
-			background-image: url("../../images/overlay.png");
-			background-color: rgba(19, 21, 25, 0.5);
-			border-radius: 4px;
-			content: '';
-			display: block;
-			height: 100%;
-			left: 0;
-			opacity: 0.5;
-			position: absolute;
-			top: 0;
-			width: 100%;
-		}
-
 		.image img {
 			border-radius: 4px;
 			display: block;
@@ -1427,7 +1412,7 @@ input, select, textarea {
 			#header .logo {
 				width: 4.75rem;
 				height: 4.75rem;
-				line-height: 4.75rem;
+				line-height: 5.45rem;
 			}
 
 				#header .logo .icon:before {
