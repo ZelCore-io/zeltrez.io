@@ -1,0 +1,13 @@
+<svg id="Box_Left" data-name="Box Left" xmlns="http://www.w3.org/2000/svg" width="492.951" height="362.297" viewBox="0 0 1479 1087">
+<defs>
+    <style>
+      .cls-1 {
+        fill: #f7f7f7;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Box_Left-2" data-name="Box Left" class="cls-1" d="M7,548L304,376,600,548V892L304,1064,7,892V548Z"/>
+  <path id="Box_Left-3" data-name="Box Left" class="cls-1" d="M879,548l297-172,296,172V892l-296,172L879,892V548Z"/>
+  <path id="Box_Main-2" data-name="Box Main" class="cls-1" d="M364,247L739,28l376,219V370L846,526V841L739,903,633,841V526L364,370V247Z"/>
+</svg>
