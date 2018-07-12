@@ -5,6 +5,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="./assets/css/main.css" />
+		<link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
 		<noscript><link rel="stylesheet" href="./assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload" onload="hidefield()">
@@ -14,15 +15,6 @@
 
 				<!-- Header -->
 					<header id="header">
-						<div class="logo">
-							<img src="./images/zeltrez-logo-light.svg" style="width: 80%"/>
-						</div>
-						<div class="content">
-							<div class="inner">
-								<p>MULTI-ASSET ENCRYPTED WALLET<br />
-								<a href="">Watch the trailer here</a></p>
-							</div>
-						</div>
 						<nav>
 							<ul>
 								<li><a href="#about">About</a></li>
@@ -33,6 +25,11 @@
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
+						<div class="content">
+							<div class="zeltrez">
+								<iframe src="https://xd.adobe.com/embed/afdb988d-77a3-4ba5-5cac-4c4b00eddeda-d9ea/?hints=off" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</div>
 					</header>
 
 				<!-- Main -->
@@ -55,11 +52,15 @@
 						<!-- Download -->
 							<article id="download">
 								<h2 class="major">Download</h2>
-								<p>Version 1.0.2 <a href="#releasenotes">Release Notes</a></p>
+								<p>Version 1.0.2 | <a href="#releasenotes">Release Notes</a></p>
 								<ul class="actions">
 									<li><a href="#" id="macOS" class="button icon fa-download">macOS</a></li>
 									<li><a href="#" id="Windows" class="button icon fa-download">Windows</a></li>
-									<li><a href="#" id="Linux" class="button icon fa-download">Linux</a></li>
+									<li><a href="#" id="Linux" class="button icon fa-download">Linux (.AppImage)</a></li>
+								</ul>
+								<ul class="actions">
+									<li><a href="#" id="Windows" class="button icon fa-download">Windows (Portable)</a></li>
+									<li><a href="#" id="Linux" class="button icon fa-download">Linux (.deb)</a></li>
 								</ul>
 							</article>
 
@@ -102,9 +103,38 @@
 
 						<!-- Roadmap -->
 							<article id="roadmap">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="./images/zeltrez-logo-text-light.svg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+								<h2 class="major">Roadmap</h2>
+								<div class="timeline cf z-0">
+
+									<div class="timeline__line z-0">
+									  <div class="timeline__line__step step1"></div>
+									  <div class="timeline__line__step step2"></div>
+									  <div class="timeline__line__step step3"></div>
+									  <div class="timeline__line__step step4"></div>
+									</div>
+						
+									<div class="timeline__entry tr w-40 ml3 mr6 mb4 fl">
+									  <h4 class="fw2 ttu tracked f7 mb0 white-50">May 2018</h4>
+									  <h5 class="f4 fw4 mb0 mt1">Zeltrez v1 Release</h5>
+									</div>
+						
+									<div class="timeline__entry tl w-40 mr3 ml6 mb4 fr">
+									  <h4 class="fw2 ttu tracked f7 mb0 white-50">August 2018</h4>
+									  <h5 class="f4 fw4 mb0 mt1">Zeltrez Mobile</h5>
+									  <h5 class="f4 fw4 mb0 mt1">Zeltrez Web</h5>
+									</div>
+						
+									<div class="timeline__entry tr w-40 ml3 mr6 mb4 fl">
+									  <h4 class="fw2 ttu tracked f7 mb0 white-50">Q4 2018</h4>
+									  <h5 class="f4 fw4 mb0 mt1">ZelDEX</h5>
+									</div>
+						
+									<div class="timeline__entry tl w-40 mr3 ml6 mb4 fr">
+									  <h4 class="fw2 ttu tracked f7 mb0 white-50">Q1 2019</h4>
+									  <h5 class="f4 fw4 mb0 mt1">ZelAPPS</h5>
+									</div>
+								  </div>
+
 							</article>
 
 						<!-- Support -->

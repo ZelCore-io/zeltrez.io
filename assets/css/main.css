@@ -1628,3 +1628,67 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+
+/* ZelTreZ */
+
+.zeltrez iframe {
+	margin-top: 10px;
+	width: 960px;
+	height: 540px;
+}
+
+@media screen and (max-width: 1024px) {
+	.zeltrez iframe {
+		width: 640px;
+		height: 360px;
+	}
+}
+
+@media screen and (max-width: 736px) {
+	.zeltrez iframe {
+		width: 480px;
+		height: 270px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.zeltrez iframe {
+		width: 320px;
+		height: 180px;
+	}
+}
+
+/* Roadmap */
+
+.timeline {
+	position: relative;
+	padding-bottom: 50px;
+  }
+  
+  .timeline__line {
+	border-left: 1px solid rgba(255,255,255,.2);
+	min-height: 100%;
+	width: 1px;
+	position: absolute;
+	left: 50%;
+	top: 22px;
+  }
+  
+  .timeline__line__step {
+	width: 12px;
+	height: 12px;
+	border-radius: 24px;
+	margin-left: -6px;
+	background-color: #476cb8;
+	position: absolute;
+	top: 0;
+  }
+  
+  .step1 { top: 0; }
+  
+  .step2 { top: 113px; }
+  
+  .step3 { top: 230px; }
+  
+  .step4 { top: 317px; }
