@@ -1637,6 +1637,9 @@ input, select, textarea {
 	width: 960px;
 	height: 540px;
 }
+.zeltrez img {
+	display: none;
+}
 
 @media screen and (max-width: 1024px) {
 	.zeltrez iframe {
@@ -1652,10 +1655,12 @@ input, select, textarea {
 	}
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 575px) {
 	.zeltrez iframe {
-		width: 320px;
-		height: 180px;
+		display: none;
+	}
+	.zeltrez img {
+		display: block;
 	}
 }
 
@@ -1672,7 +1677,7 @@ input, select, textarea {
 	width: 1px;
 	position: absolute;
 	left: 50%;
-	top: 22px;
+	top: 3px;
   }
   
   .timeline__line__step {
@@ -1680,15 +1685,15 @@ input, select, textarea {
 	height: 12px;
 	border-radius: 24px;
 	margin-left: -6px;
-	background-color: #476cb8;
+	background-color: #fff;
 	position: absolute;
 	top: 0;
   }
   
   .step1 { top: 0; }
   
-  .step2 { top: 113px; }
+  .step2 { top: 114px; }
   
-  .step3 { top: 230px; }
+  .step3 { top: 232px; }
   
-  .step4 { top: 317px; }
+  .step4 { top: 316px; }
