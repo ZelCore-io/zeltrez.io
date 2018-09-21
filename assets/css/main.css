@@ -1866,14 +1866,16 @@ input, select, textarea {
      object-fit: cover;
 }
 .slider-content .title-wrapper {
-  position: absolute;
-  color: white;
-  left: 3rem;
-  bottom: 5rem;
-  width: 40%;
+	position: absolute;
+	color: white;
+	left: 0rem;
+	bottom: 0rem;
+	background-color: rgba(0,0,0,0.5);
+	padding: 20px;
+	width: 100%;
 }
 .slider-content .title-wrapper.bigger {
-  width: 48%;
+  width: 100%;
 }
 .slider-content .title-wrapper h1 {
 	font-size: 2rem;
@@ -1881,12 +1883,12 @@ input, select, textarea {
 	line-height: 1;
 	margin-bottom: 1rem;
 	font-weight: 900;
-	text-shadow: 0 0 10px black;
+	text-shadow: 0 0 10px black, 0 0 5px black;
 }
 .slider-content .title-wrapper h2 {
-  font-size: 1rem;
-  margin: 0;
-  text-shadow: 0 0 5px black, 0 0 5px black;
+	font-size: 1rem;
+	margin: 0;
+	text-shadow: 0 0 5px black, 0 0 5px black, 0 0 2px black;
 }
 
 .control-nav {
@@ -2014,7 +2016,6 @@ svg.mask {
 	}
 	.slider-content .title-wrapper {
 		left: 0;
-		bottom: 2rem;
 		width: 100%;
 	}
 	.control-nav li {
