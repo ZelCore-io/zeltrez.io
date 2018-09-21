@@ -1,2 +1,2 @@
-# zeltrez.io
-Website for ZelTreZ
+# zelcore.io
+Website for ZelCore
