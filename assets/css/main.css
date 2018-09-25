@@ -609,7 +609,7 @@ input, select, textarea {
 	}
 	.supportedcoins p img {
 		width: 30px;
-		vertical-align: bottom;
+		vertical-align: sub;
 		padding-right: 5px;
 	}
 
