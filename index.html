@@ -5,7 +5,9 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="./assets/css/main.css" />
-		<link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+    <link rel="stylesheet" href="https://zel.cash/css/unified.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 		<noscript><link rel="stylesheet" href="./assets/css/noscript.css" /></noscript>
 
 		<!-- Favicon -->
@@ -21,7 +23,32 @@
 		</script>
 		
 	</head>
-	<body class="is-preload" onload="hidefield()">
+  <body class="is-preload" onload="hidefield()">
+    
+    <div id="myNav" class="overlay" onclick="closeNav()">
+
+			<!-- Button to close the overlay navigation -->
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			
+			<!-- Overlay content -->
+			<div class="overlay-content">
+				<a href="#"><img src="https://zel.cash/img/logo-zeltech-text.svg"></a>
+				<a href="https://zel.cash"><img src="https://zel.cash/img/logo-zelcash-text-light.svg"></a>
+				<a href="https://zelcore.io"><img src="https://zel.cash/img/logo-zelcore-text-light.svg"></a>
+				<a href="https://zelid.io"><img src="https://zel.cash/img/logo-zelid-text.svg"></a>
+			</div>
+			
+		</div>
+			
+		<div class="unified" onclick="openNav()">
+			<a href="#" onclick="openNav()">Zel Ecosystem</a>
+		</div>
+		
+		<div class="triangle-down">
+			<p>
+				<i class="fas fa-caret-down fa-2x"></i>
+			</p>
+		</div>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -137,12 +164,12 @@
 								<h2 class="major">Desktop</h2>
 								<p>Version 1.1.3a | <a href="#releasenotes">Release Notes</a> | <a href="#sha">SHA256</a></p>
 								<ul class="actions">
-									<li><a href="./downloads/zelcore.dmg" id="macOS" class="button icon fa-apple">macOS</a></li>
-									<li><a href="./downloads/zelcore.exe" id="Windows" class="button icon fa-windows">Windows</a></li>
-									<li><a href="./downloads/zelcore-portable.exe" id="Windows" class="button icon fa-windows">Windows (Portable)</a></li>
+									<li><a href="./downloads/zelcore.dmg" id="macOS" class="button"><i class="fab fa-apple"></i> macOS</a></li>
+									<li><a href="./downloads/zelcore.exe" id="Windows" class="button"><i class="fab fa-windows"></i> Windows</a></li>
+									<li><a href="./downloads/zelcore-portable.exe" id="Windows" class="button"><i class="fab fa-windows"></i> Windows (Portable)</a></li>
 								</ul>
 								<ul class="actions">
-									<li><a href="#linux" id="Linux" class="button icon fa-linux">Linux builds</a></li>
+									<li><a href="#linux" id="Linux" class="button"><i class="fab fa-linux"></i> Linux builds</a></li>
 								</ul>
 								<h2 class="major">Mobile</h2>
 								<p>Version 1.1.3 | <a href="#releasenotesmobile">Release Notes</a></p>
@@ -200,16 +227,16 @@
 						<article id="linux">
 							<h2 class="major">Linux</h2>
 							<ul class="actions">
-								<li><a href="./downloads/zelcore.AppImage" id="Linux" class="button icon fa-linux">Linux (.AppImage)</a></li>
-								<li><a href="./downloads/zelcore.deb" id="Linux" class="button icon fa-linux">Linux (.deb)</a></li>
+								<li><a href="./downloads/zelcore.AppImage" id="Linux" class="button"><i class="fab fa-linux"></i> Linux (.AppImage)</a></li>
+								<li><a href="./downloads/zelcore.deb" id="Linux" class="button"><i class="fab fa-linux"></i> Linux (.deb)</a></li>
 							</ul>
 							<ul class="actions">
-								<li><a href="./downloads/zelcore3x.AppImage" id="Linux" class="button icon fa-linux">Linux (3x kernel)</a></li>
-								<li><a href="./downloads/zelcore3x.deb" id="Linux" class="button icon fa-linux">Linux (3x kernel .deb)</a></li>
+								<li><a href="./downloads/zelcore3x.AppImage" id="Linux" class="button"><i class="fab fa-linux"></i> Linux (3x kernel)</a></li>
+								<li><a href="./downloads/zelcore3x.deb" id="Linux" class="button"><i class="fab fa-linux"></i> Linux (3x kernel .deb)</a></li>
 							</ul>
 							<ul class="actions">
-								<li><a href="./downloads/zelcore4x.AppImage" id="Linux" class="button icon fa-linux">Linux (4x kernel)</a></li>
-								<li><a href="./downloads/zelcore4x.deb" id="Linux" class="button icon fa-linux">Linux (4x kernel .deb)</a></li>
+								<li><a href="./downloads/zelcore4x.AppImage" id="Linux" class="button"><i class="fab fa-linux"></i> Linux (4x kernel)</a></li>
+								<li><a href="./downloads/zelcore4x.deb" id="Linux" class="button"><i class="fab fa-linux"></i> Linux (4x kernel .deb)</a></li>
 							</ul>
 						</article>
 
@@ -828,7 +855,8 @@
 			<script src="./assets/js/util.js"></script>
 			<script src="./assets/js/main.js"></script>
 			<script src="./assets/js/slide.js"></script>
-			<script src="validator.js"></script>
+      <script src="validator.js"></script>
+      <script src="https://zel.cash/js/unified.js"></script>
 			<script type="text/javascript">var submitted=false;</script>
 			<script type="text/javascript">
 				$('#contact-form').on('submit', function(e) {
@@ -857,17 +885,17 @@
 
 			// Check if Mac
 			if ((navigator.userAgent.match(/Macintosh/))) {
-				macClass.setAttribute('class','button icon fa-apple primary');
+				macClass.setAttribute('class','button primary');
 			}
 
 			// Check if Windows
 			if ((navigator.userAgent.match(/Windows/))) {
-				windowsClass.setAttribute('class','button icon fa-windows primary');
+				windowsClass.setAttribute('class','button primary');
 			}
 
 			// Check if Linux
 			if ((navigator.userAgent.match(/Linux/))) {
-				linuxClass.setAttribute('class','button icon fa-linux primary');
+				linuxClass.setAttribute('class','button primary');
 			}
 			</script>
 	</body>
