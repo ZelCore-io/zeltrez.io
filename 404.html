@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>ZelCore - part of Zel Technologies GmbH</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+        <!-- Favicon -->
+        <link href="images/favicon.ico" rel="shortcut icon"/>
+
+    </head>
+    <body onload="myFunction()">
+
+        <div id="wrapper">
+            <header id="header">
+                <a href="https://zelcore.io" class="button">Go back to homepage</a>
+            </header>
+            <div id="main">
+                <article id="error">
+                    <h1 class="major">404</h1>
+                    <span class="image main"><h2>Page not found</h2></span>
+                    <p>The page you are looking for might have been removed, had its name changed or is temporarily unavailable.</p>
+                    <a href="https://zelcore.io" class="button">Go back to homepage</a>
+                 </article>
+            </div>
+        </div>
+
+        <!-- BG -->
+        <div id="bg"></div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+        function myFunction() {
+            window.location.href = "#error";
+        }
+        </script>
+    </body>
+</html>
