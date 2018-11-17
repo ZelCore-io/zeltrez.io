@@ -6,6 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="./assets/css/main.css" />
 		<link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+		<link rel="stylesheet" href="https://zel.cash/css/unified.css"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 		<noscript><link rel="stylesheet" href="./assets/css/noscript.css" /></noscript>
 
 		<!-- Favicon -->
@@ -21,7 +23,32 @@
 		</script>
 		
 	</head>
-	<body class="is-preload" onload="hidefield()">
+  <body class="is-preload" onload="hidefield()">
+    
+    	<div id="myNav" class="overlay" onclick="closeNav()">
+
+			<!-- Button to close the overlay navigation -->
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			
+			<!-- Overlay content -->
+			<div class="overlay-content">
+				<a href="#"><img src="https://zel.cash/img/logo-zeltech-text.svg"></a>
+				<a href="https://zel.cash"><img src="https://zel.cash/img/logo-zelcash-text-light.svg"></a>
+				<a href="https://zelcore.io"><img src="https://zel.cash/img/logo-zelcore-text-light.svg"></a>
+				<a href="https://zelid.io"><img src="https://zel.cash/img/logo-zelid-text.svg"></a>
+			</div>
+			
+		</div>
+			
+		<div class="unified" onclick="openNav()">
+			<a href="#" onclick="openNav()">Zel Ecosystem</a>
+		</div>
+		
+		<div class="triangle-down">
+			<p>
+				<i class="fas fa-caret-down fa-2x"></i>
+			</p>
+		</div>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -40,7 +67,7 @@
 
 						<svg id="icons" class="hide">
 							<symbol id="arrow" viewBox="0 0 451.846 451.847"><path fill="#FFF" d="M345.44 248.292l-194.286 194.28c-12.36 12.366-32.397 12.366-44.75 0-12.354-12.353-12.354-32.39 0-44.743l171.914-171.91-171.91-171.905c-12.353-12.36-12.353-32.394 0-44.748 12.355-12.36 32.392-12.36 44.75 0L345.446 203.55c6.177 6.18 9.262 14.27 9.262 22.367 0 8.098-3.09 16.195-9.267 22.372z"/></symbol>
-							</svg>
+						</svg>
 							
 							<div class="slider-content">
 							<div class="slider-wrapper">
@@ -137,12 +164,12 @@
 								<h2 class="major">Desktop</h2>
 								<p>Version 1.2.0 | <a href="#releasenotes">Release Notes</a> | <a href="#sha">SHA256</a></p>
 								<ul class="actions">
-									<li><a href="./downloads/zelcore.dmg" id="macOS" class="button icon fa-apple">macOS</a></li>
-									<li><a href="./downloads/zelcore.exe" id="Windows" class="button icon fa-windows">Windows</a></li>
-									<li><a href="./downloads/zelcore-portable.exe" id="Windows" class="button icon fa-windows">Windows (Portable)</a></li>
+									<li><a href="./downloads/zelcore.dmg" id="macOS" class="button"><i class="fab fa-apple"></i> macOS</a></li>
+									<li><a href="./downloads/zelcore.exe" id="Windows" class="button"><i class="fab fa-windows"></i> Windows</a></li>
+									<li><a href="./downloads/zelcore-portable.exe" id="Windows" class="button"><i class="fab fa-windows"></i> Windows (Portable)</a></li>
 								</ul>
 								<ul class="actions">
-									<li><a href="#linux" id="Linux" class="button icon fa-linux">Linux builds</a></li>
+									<li><a href="#linux" id="Linux" class="button"><i class="fab fa-linux"></i> Linux builds</a></li>
 								</ul>
 								<h2 class="major">Mobile</h2>
 								<p>Version 1.1.4 | <a href="#releasenotesmobile">Release Notes</a></p>
@@ -200,16 +227,16 @@
 						<article id="linux">
 							<h2 class="major">Linux</h2>
 							<ul class="actions">
-								<li><a href="./downloads/zelcore.AppImage" id="Linux" class="button icon fa-linux">Linux (.AppImage)</a></li>
-								<li><a href="./downloads/zelcore.deb" id="Linux" class="button icon fa-linux">Linux (.deb)</a></li>
+								<li><a href="./downloads/zelcore.AppImage" id="Linux" class="button"><i class="fab fa-linux"></i> Linux (.AppImage)</a></li>
+								<li><a href="./downloads/zelcore.deb" id="Linux" class="button"><i class="fab fa-linux"></i> Linux (.deb)</a></li>
 							</ul>
 							<ul class="actions">
-								<li><a href="./downloads/zelcore3x.AppImage" id="Linux" class="button icon fa-linux">Linux (3x kernel)</a></li>
-								<li><a href="./downloads/zelcore3x.deb" id="Linux" class="button icon fa-linux">Linux (3x kernel .deb)</a></li>
+								<li><a href="./downloads/zelcore3x.AppImage" id="Linux" class="button"><i class="fab fa-linux"></i> Linux (3x kernel)</a></li>
+								<li><a href="./downloads/zelcore3x.deb" id="Linux" class="button"><i class="fab fa-linux"></i> Linux (3x kernel .deb)</a></li>
 							</ul>
 							<ul class="actions">
-								<li><a href="./downloads/zelcore4x.AppImage" id="Linux" class="button icon fa-linux">Linux (4x kernel)</a></li>
-								<li><a href="./downloads/zelcore4x.deb" id="Linux" class="button icon fa-linux">Linux (4x kernel .deb)</a></li>
+								<li><a href="./downloads/zelcore4x.AppImage" id="Linux" class="button"><i class="fab fa-linux"></i> Linux (4x kernel)</a></li>
+								<li><a href="./downloads/zelcore4x.deb" id="Linux" class="button"><i class="fab fa-linux"></i> Linux (4x kernel .deb)</a></li>
 							</ul>
 						</article>
 
@@ -787,22 +814,45 @@
 								<form id="contact-form" id="contact-form" enctype="text/plain" action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSfTbMx4SCoCgUKiBxg2K92NH7qIJAAK2SrNVGBDbCBDuJ1vyA/formResponse" target="hidden_iframe" class="contact-form" onsubmit="submitted=true;">
 									<div class="messages"></div>
 									<div class="fields" id="fields">
-										<div class="field half form-group">
-											<label for="name">What's your project's name?*</label>
+										<div class="field form-group">
+											<label for="name">What is the name of your project?*</label>
 											<input type="text" name="entry.1592002573" id="entry.1592002573" required />
 											<div class="help-block with-errors"></div>
 										</div>
+										<div class="field form-group">
+											<label for="ticker">What is your affiliation to the project?*</label>
+											<label>You must be affiliated with the submitted project at a managerial level, else your application will not be considered.</label>
+											<select name="entry.1205962687" id="entry.1205962687" required onchange="showfield(this.options[this.selectedIndex].value)">
+												<option value="Founder/Co-founder/CEO">Founder/Co-founder/CEO</option>
+												<option value="Lead Developer">Lead Developer</option>
+												<option value="Project Manager/Lead Operations">Project Manager/Lead Operations</option>
+												<option value="Major Investor (>5% max supply)">Major Investor (>5% max supply)</option>
+											</select>
+											<div class="help-block with-errors"></div>
+										</div>
 										<div class="field half form-group">
-											<label for="ticker">What's your ticker symbol?*</label>
-											<input type="text" name="entry.281279916" id="entry.281279916" placeholder="Examples: BTC, ETH, LTC" required />
+											<label for="name">What is your full name?*</label>
+											<input type="text" name="entry.887118625" id="entry.887118625" required />
+											<div class="help-block with-errors"></div>
+										</div>
+										<div class="field half form-group">
+											<label for="name">What is your email?*</label>
+											<input type="text" name="entry.1847043248" id="entry.1847043248" required />
+											<div class="help-block with-errors"></div>
+										</div>
+										<div class="field form-group">
+											<label for="why">Describe your project in 1-2 sentences.*</label>
+											<textarea name="entry.1977166129" id="entry.1977166129" rows="4" required></textarea>
 											<div class="help-block with-errors"></div>
 										</div>
 										<div class="field form-group">
 											<label for="fork">What kind of coin is it?*</label>
 											<select name="entry.1358883272" id="entry.1358883272" required onchange="showfield(this.options[this.selectedIndex].value)">
-												<option value="Bitcoin Fork">Bitcoin Fork</option>
-												<option value="ERC-20">ERC-20</option>
+												<option value="Bitcoin fork">Bitcoin fork</option>
+												<option value="Zcash fork">Zcash fork</option>
+												<option value="ERC-20 token">ERC-20 token</option>
 												<option value="Cryptonote">Cryptonote</option>
+												<option value="Omni Token">Omni Token</option>
 												<option value="Other">Other</option>
 											</select>
 											<div class="help-block with-errors"></div>
@@ -812,38 +862,89 @@
 											<input type="text" name="entry.2101143433" id="entry.2101143433" placeholder="" />
 											<div class="help-block with-errors"></div>
 										</div>
-										<div class="field form-group">
-											<label for="why">Why do you want to be added to ZelCore?*</label>
-											<textarea name="entry.1604842487" id="entry.1604842487" rows="4" required></textarea>
-											<div class="help-block with-errors"></div>
-										</div>
 										<div class="field half form-group">
-											<label for="email">Devteam member's email*</label>
-											<input type="text" name="entry.63847681" id="entry.63847681" required />
-											<div class="help-block with-errors"></div>
-										</div>
-										<div class="field half form-group">
-											<label for="github">Project Github*</label>
-											<input type="text" name="entry.1780143023" id="entry.1780143023" placeholder="https://" required />
-											<div class="help-block with-errors"></div>
-										</div>
-										<div class="field half form-group">
-											<label for="website">Project Website*</label>
+											<label for="github">Project website URL*</label>
 											<input type="text" name="entry.305119696" id="entry.305119696" placeholder="https://" required />
 											<div class="help-block with-errors"></div>
 										</div>
 										<div class="field half form-group">
-											<label for="blockexplorer">Block Explorer</label>
-											<input type="text" name="entry.1139460457" id="entry.1139460457" placeholder="https://" />
+											<label for="website">Project GitHub URL*</label>
+											<input type="text" name="entry.1780143023" id="entry.1780143023" placeholder="https://" required />
 											<div class="help-block with-errors"></div>
 										</div>
 										<div class="field half form-group">
-											<label for="discord">Discord Link</label>
-											<input type="text" name="entry.935387692" id="entry.935387692" placeholder="https://" />
+											<label for="website">Project whitepaper</label>
+											<label>PDF link*</label>
+											<input type="text" name="entry.63847681" id="entry.63847681" placeholder="https://" required />
+											<div class="help-block with-errors"></div>
+										</div>
+										<div class="field half form-group">
+											<label for="blockexplorer">Block explorer URL or</label>
+											<label>Etherscan link*</label>
+											<input type="text" name="entry.1139460457" id="entry.1139460457" placeholder="https://" required />
+											<div class="help-block with-errors"></div>
 										</div>
 										<div class="field form-group">
-											<label for="message">Message</label>
-											<textarea name="entry.580022552" id="entry.580022552" rows="4"></textarea>
+											<label for="discord">Social media links*</label>
+											<label>(Discord, Twitter, etc.)</label>
+											<textarea name="entry.935387692" id="entry.935387692" rows="4"></textarea>
+										</div>
+										<div class="field form-group">
+											<label for="message">If members of your team are publicly disclosed, provide their LinkedIn URLs</label>
+											<textarea name="entry.1790031550" id="entry.1790031550" rows="4"></textarea>
+										</div>
+										<div class="field form-group">
+											<label for="fork">Have you submitted your project for listing previously?*</label>
+											<select name="entry.241966238" id="entry.241966238" required onchange="showfield(this.options[this.selectedIndex].value)">
+												<option value="Yes">Yes</option>
+												<option value="No">No</option>
+											</select>
+											<div class="help-block with-errors"></div>
+										</div>
+										<div class="field form-group">
+											<label for="fork">If Bitcoin fork, does your project have Bitcore integrated into the block explorer?</label>
+											<select name="entry.1628919152" id="entry.1628919152" onchange="showfield(this.options[this.selectedIndex].value)">
+												<option value="Yes">Yes</option>
+												<option value="No">No</option>
+											</select>
+										</div>
+										<div class="field form-group">
+											<label for="fork">If Bitcoin fork, do you have an open-source Insight block explorer?</label>
+											<select name="entry.2050439787" id="entry.2050439787" onchange="showfield(this.options[this.selectedIndex].value)">
+												<option value="Yes">Yes</option>
+												<option value="No">No</option>
+											</select>
+										</div>
+										<div class="field form-group">
+											<label for="fork">If Cryptonote fork, do you have a ported version of openmonero for your project?</label>
+											<select name="entry.1135081116" id="entry.1135081116" onchange="showfield(this.options[this.selectedIndex].value)">
+												<option value="Yes">Yes</option>
+												<option value="No">No</option>
+											</select>
+										</div>
+										<div class="field form-group">
+											<label for="fork">If Bitcoin/Zcash fork, do you have an Electrum server?</label>
+											<select name="entry.542482650" id="entry.542482650" onchange="showfield(this.options[this.selectedIndex].value)">
+												<option value="Yes">Yes</option>
+												<option value="No">No</option>
+											</select>
+										</div>
+										<div class="field form-group">
+											<label for="github">Project's ticker symbol*</label>
+											<label>The ticker should be 3-4 characters and unique to your project.</label>
+											<input type="text" name="entry.1708448557" id="entry.1708448557" required />
+											<div class="help-block with-errors"></div>
+										</div>
+										<div class="field form-group">
+											<label for="fork">Does your project utilize any unique chain features (interest claiming, etc.)?*</label>
+											<select name="entry.684565810" id="entry.684565810" required onchange="showfield(this.options[this.selectedIndex].value)">
+												<option value="Yes">Yes</option>
+												<option value="No">No</option>
+											</select>
+										</div>
+										<div class="field form-group">
+											<label for="message">If yes, please list all that you think would apply.</label>
+											<textarea name="entry.288798762" id="entry.288798762" rows="4"></textarea>
 										</div>
 									</div>
 									<ul class="actions" id="actions">
@@ -872,7 +973,8 @@
 			<script src="./assets/js/util.js"></script>
 			<script src="./assets/js/main.js"></script>
 			<script src="./assets/js/slide.js"></script>
-			<script src="validator.js"></script>
+      		<script src="validator.js"></script>
+      		<script src="https://zel.cash/js/unified.js"></script>
 			<script type="text/javascript">var submitted=false;</script>
 			<script type="text/javascript">
 				$('#contact-form').on('submit', function(e) {
@@ -901,17 +1003,17 @@
 
 			// Check if Mac
 			if ((navigator.userAgent.match(/Macintosh/))) {
-				macClass.setAttribute('class','button icon fa-apple primary');
+				macClass.setAttribute('class','button primary');
 			}
 
 			// Check if Windows
 			if ((navigator.userAgent.match(/Windows/))) {
-				windowsClass.setAttribute('class','button icon fa-windows primary');
+				windowsClass.setAttribute('class','button primary');
 			}
 
 			// Check if Linux
 			if ((navigator.userAgent.match(/Linux/))) {
-				linuxClass.setAttribute('class','button icon fa-linux primary');
+				linuxClass.setAttribute('class','button primary');
 			}
 			</script>
 	</body>
