@@ -162,7 +162,7 @@
 						<!-- Download -->
 							<article id="download">
 								<h2 class="major">Desktop</h2>
-								<p>Version 1.2.0 | <a href="#releasenotes">Release Notes</a> | <a href="#sha">SHA256</a></p>
+								<p>Version 1.2.2 | <a href="#releasenotes">Release Notes</a> | <a href="#sha">SHA256</a></p>
 								<ul class="actions">
 									<li><a href="./downloads/zelcore.dmg" id="macOS" class="button"><i class="fab fa-apple"></i> macOS</a></li>
 									<li><a href="./downloads/zelcore.exe" id="Windows" class="button"><i class="fab fa-windows"></i> Windows</a></li>
@@ -172,7 +172,7 @@
 									<li><a href="#linux" id="Linux" class="button"><i class="fab fa-linux"></i> Linux builds</a></li>
 								</ul>
 								<h2 class="major">Mobile</h2>
-								<p>Version 1.1.4 | <a href="#releasenotesmobile">Release Notes</a></p>
+								<p>Version 1.1.5 | <a href="#releasenotesmobile">Release Notes</a></p>
 								<ul class="actions">
 									<li><a href="https://itunes.apple.com/us/app/zelcore/id1436296839?mt=8" class="noborder" target="_blank"><img src="images/appstore-b.svg" class="appstore"></a></li>
 									<li><a href="https://play.google.com/store/apps/details?id=com.zelcash.zelcore" class="noborder" target="_blank"><img src="images/playstore.png" class="playstore"></a></li>
@@ -194,28 +194,28 @@
 						<!-- ZelTreZ -->
 
 						<article id="sha">
-							<h3>ZelCore v1.2.0 has following SHA256 hashes</h3>
+							<h3>ZelCore v1.2.2 has following SHA256 hashes</h3>
 							<p>All ZelCore releases are signed by Zel Technologies GmbH. Furthermore we provide calculated SHA256 hashes of our releases </p>
 							
-								fc4989559ce9bfb366d25c15c41ce493c8629ff374711b44c6ffcd882034add3
+							    5486082d008ead4de4a7e4a22526c0454f1c1d6d063bd3f8d523dd6fb293394c
 								<h5>* zelcore.dmg</h5>
 
-								42efa724ece50d43f988085368c1bd791a965d80c7c761db36b33600b1c02107
+								a826955e01d4c23f29ba3107c8b265712b2810baae843db0fa3aba318eaa2e9f
 								<h5>* zelcore.exe</h5>
 
-								64b77ab7f750ec913215c148e079805a84c1e2dfdc4d5f106697e018228d0248
+								7516e9b2af3c868dca7ba8c0a649534d72484896fd4d67386a860ea3183ef504
 								<h5>* zelcore-portable.exe</h5>
 								
-								d03c4b8a154adc3c4ce385b82e2d54e0672a37a034ae435816cac97ea9cb30ca
+								c56559efe9a777cbbedcca79ba2a6ac9fe924e31e67b52b1d175ab481b076e5b
 								<h5>* zelcore.AppImage & zelcore4x.AppImage</h5>
 								
-								84d9b0f85a5f5535ea443ca370dc8754e44f7808a7afbe71379aa383117ea927
+								4147cd8f30e9016da664034c29f8a750cb76129cf84e645edc0b65d6c7affbdd
 								<h5>* zelcore.deb & zelcore4x.deb</h5>
 								
-								2ad53a439aabb9e9a17d381ea84fe56449215998535c9d38818689dd9e26ec79
+								0698fd2ad7245b955cf58257bb82e6f7c3cf6c235bc059e39f87c19b00886412
 								<h5>* zelcore3x.AppImage</h5>
 								
-								2f137432cc634eea0326d581a02a8b498f594b024787bc0d86f124deb0521a96
+								84dd924b4a74bd5596aa7a9e687463690617572d876ecc1c6a940b6a9a8d13c7
 								<h5>* zelcore3x.deb</h5><br>
 
 								<p>GPG Fingerprint: 4F7F EBBF 1BDD D239 7DAB  E2CF 4B69 CA27 A986 265D</p>
@@ -243,6 +243,39 @@
 						<!-- Release notes -->
 							<article id="releasenotes">
 								<h2 class="major">Release Notes</h2>
+								<!-- 1.2.2 -->
+								<p>1.2.2 Release Notes</p>
+								<h4>Info</h4>
+								<p>Version 1.2.2 Ovechka </p>
+								<h4>Features</h4>
+								<ul>
+									<li>Following assets added: Genesis (GENX), Proof Of Review (POR).</li>
+									<li>BitcoinCash is now available and defaults to ABC version.</li>
+									<li>Export to CSV option activated for all assets.</li>
+									<li>d2FA accounts can now be accessed in offline mode as well.</li>
+									<li>Better protection against flooding attacks.</li>
+								</ul>
+								<h4>Bugs</h4>
+								<ul>
+									<li>BitcoinCash contact addresses from successful transactions were saving in legacy format instead of CashAddr format.</li>
+								</ul>
+								<!-- END -->
+								<hr>
+								<!-- 1.2.1 -->
+								<p>1.2.1 Release Notes</p>
+								<h4>Info</h4>
+								<p>Version 1.2.1 AirCrispX2 </p>
+								<h4>Features</h4>
+								<ul>
+									<li>An experimantal feature to export transactions to CSV has been added for some coins. We are looking for a feedback to completely activate this feature in the next release.</li>
+								</ul>
+								<h4>Bugs</h4>
+								<ul>
+									<li>A wrong iteration was preventing sending from full node.</li>
+									<li>Fixes table overlapping on installation page.</li>
+								</ul>
+								<!-- END -->
+								<hr>
 								<!-- 1.2.0 -->
 								<p>1.2.0 Release Notes</p>
 								<h4>Info</h4>
@@ -527,6 +560,23 @@
 
 						<article id="releasenotesmobile">
 							<h2 class="major">Release Notes</h2>
+							<!-- 1.1.5 -->
+							<p>1.1.5 Release Notes</p>
+							<h4>Info</h4>
+							<p>Version 1.1.5 AirCrisp </p>
+							<h4>Features</h4>
+							<ul>
+								<li>Following assets added: Genesis (GENX), Proof Of Review (POR).</li>
+								<li>BitcoinCash is now available and defaults to ABC version.</li>
+								<li>d2FA accounts can now be accessed in offline mode as well.</li>
+								<li>Better protection against flooding attacks.</li>
+							</ul>
+							<h4>Bugs</h4>
+							<ul>
+								<li>BitcoinCash contact addresses from successful transactions were saving in legacy format instead of CashAddr format.</li>
+							</ul>
+							<!-- END -->
+							<hr>
 							<!-- 1.1.4 -->
 							<p>1.1.4 Release Notes</p>
 							<h4>Info</h4>
@@ -670,7 +720,7 @@
 							<article id="support">
 								<h2 class="major">Support</h2>
 								<h3>Which coins are supported in ZelCore?</h3>
-								<p>As of version 1.2.0, we support:</p>
+								<p>As of version 1.2.2, we support:</p>
 								<div class="supportedcoins">
 									<p><img src="images/logos/Zelcash.svg">ZelCash (ZEL)</p>
 									<p><img src="images/logos/Bitcoin.svg">Bitcoin (BTC)</p>
@@ -746,6 +796,8 @@
 									<p><img src="images/logos/ETC.svg">Ethereum Classic (ETC)</p>
 									<p><img src="images/logos/CoinBene.svg">CoinBene Coin (CONI)</p>
 									<p><img src="images/logos/TOKOK.svg">Tokok (TOK)</p>
+									<p><img src="images/logos/Genesis.svg">Genesis (GENX)</p>
+									<p><img src="images/logos/POR.svg">Proof Of Review (POR)</p>
 								</div>
 								<h3>What is the Portfolio tab?</h3>
 								<p>Portfolio hosts all the coins/tokens suported by ZelCore. To us a coin simply, click on its icon to bring you to the coins action page.</p>
