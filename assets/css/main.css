@@ -1722,21 +1722,21 @@ input, select, textarea {
 	color: rgba(255, 85, 31, 0.85);
 }
 
-.appstore {
+.appstore, .playstore {
 	height: 50px;
-	padding: 9px;
-	filter: opacity(80%)
-}
-.playstore {
-	height: 50px;
-	filter: opacity(80%)
+	filter: opacity(.8)
 }
 
-.appstore:hover {
-	filter: opacity(100%)
+.appstore:hover, .playstore:hover {
+	filter: opacity(1)
 }
-.playstore:hover {
-	filter: opacity(100%)
+
+.imagehover {
+	filter: opacity(.8)
+}
+
+.imagehover:hover {
+	filter: opacity(1)
 }
 
 .noborder {
