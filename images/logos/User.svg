@@ -1,0 +1,22 @@
+<svg id="User" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+<defs>
+    <style>
+      .cls-1 {
+        fill: #e6e6e6;
+      }
+
+      .cls-1, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+        stroke: #e6e6e6;
+        stroke-width: 20px;
+      }
+    </style>
+  </defs>
+  <path id="Shape_4_copy_4" data-name="Shape 4 copy 4" class="cls-1" d="M10,255c0,135.094,109.906,245,245,245S500,390.094,500,255,390.094,10,255,10,10,119.906,10,255Zm19.6,0C29.6,130.714,130.714,29.6,255,29.6S480.4,130.714,480.4,255,379.286,480.4,255,480.4,29.6,379.286,29.6,255Z"/>
+  <circle class="cls-2" cx="256.5" cy="205.5" r="88.125"/>
+  <path id="Ellipse_7_copy" data-name="Ellipse 7 copy" class="cls-3" d="M110,440a146,146,0,0,1,292,0"/>
+</svg>

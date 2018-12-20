@@ -1,0 +1,42 @@
+<svg id="Blockchain" xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 512 512">
+<defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #232220;
+      }
+
+      .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #232220;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 15px;
+      }
+    </style>
+  </defs>
+  <circle id="Main" class="cls-1" cx="255.5" cy="255.5" r="228.5"/>
+  <g id="Line">
+    <path id="Line4" class="cls-2" d="M221.76,267.041l8.08-5.374a5.755,5.755,0,1,1,6.4,9.567l-8.081,5.374A5.755,5.755,0,1,1,221.76,267.041Z"/>
+    <path id="Line3" class="cls-2" d="M249.779,248.856l8.081-5.373a5.755,5.755,0,1,1,6.4,9.567l-8.08,5.373A5.755,5.755,0,1,1,249.779,248.856Z"/>
+    <path id="Line2" class="cls-2" d="M275.981,230.789l8.081-5.374a5.755,5.755,0,1,1,6.4,9.567l-8.08,5.374A5.755,5.755,0,1,1,275.981,230.789Z"/>
+    <path id="Line1" class="cls-2" d="M299.311,215.333l8.081-5.374a5.756,5.756,0,1,1,6.4,9.568l-8.08,5.373A5.755,5.755,0,1,1,299.311,215.333Z"/>
+  </g>
+  <g id="BottomBox">
+    <path id="BottomBox3" class="cls-3" d="M128.748,281.421l46.137-27.237,46.137,27.237-46.137,26.632Z"/>
+    <path id="BottomBox2" class="cls-3" d="M127.581,283.083L174.307,309.3l-0.589,53.456-46.2-26.521Z"/>
+    <path id="BottomBox1" class="cls-3" d="M221.264,282.338l-46.678,26.285,0.589,53.593,46.153-26.589Z"/>
+  </g>
+  <g id="TopBox">
+    <path id="TopBox3" class="cls-3" d="M289.013,174.9l46.137-27.237L381.287,174.9,335.15,201.526Z"/>
+    <path id="TopBox2" class="cls-3" d="M287.846,176.556l46.726,26.219-0.589,53.456-46.2-26.522Z"/>
+    <path id="TopBox1" class="cls-3" d="M381.529,175.811L334.851,202.1l0.588,53.592L381.593,229.1Z"/>
+  </g>
+</svg>

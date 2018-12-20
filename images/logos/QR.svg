@@ -1,0 +1,48 @@
+<svg id="QR" xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 512 512">
+<defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #232220;
+        stroke-width: 25px;
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: #232220;
+      }
+    </style>
+  </defs>
+  <circle id="Main" class="cls-1" cx="255.5" cy="255.5" r="228.5"/>
+  <g id="Q1">
+    <path id="Outer" class="cls-2" d="M130.66,130.66h100v100h-100v-100Z"/>
+    <rect id="Inner" class="cls-3" x="168.656" y="168.656" width="25" height="25"/>
+  </g>
+  <g id="Q2">
+    <path id="Outer-2" data-name="Outer" class="cls-2" d="M280.66,130.66h100v100h-100v-100Z"/>
+    <rect id="Inner-2" data-name="Inner" class="cls-3" x="318.656" y="168.656" width="25" height="25"/>
+  </g>
+  <g id="Q3">
+    <path id="Outer-3" data-name="Outer" class="cls-2" d="M130.66,280.66h100v100h-100v-100Z"/>
+    <rect id="Inner-3" data-name="Inner" class="cls-3" x="168.656" y="318.656" width="25" height="25"/>
+  </g>
+  <g id="Q4">
+    <rect id="Inner-4" data-name="Inner" class="cls-3" x="342.656" y="267.656" width="25" height="25"/>
+    <rect id="Inner_copy" data-name="Inner copy" class="cls-3" x="367.656" y="292.656" width="25" height="25"/>
+    <rect id="Inner_copy_2" data-name="Inner copy 2" class="cls-3" x="367.656" y="267.656" width="25" height="25"/>
+    <rect id="Inner_copy_3" data-name="Inner copy 3" class="cls-3" x="367.656" y="367.656" width="25" height="25"/>
+    <rect id="Inner_copy_4" data-name="Inner copy 4" class="cls-3" x="342.656" y="342.656" width="25" height="25"/>
+    <rect id="Inner_copy_5" data-name="Inner copy 5" class="cls-3" x="317.656" y="342.656" width="25" height="25"/>
+    <rect id="Inner_copy_6" data-name="Inner copy 6" class="cls-3" x="292.656" y="342.656" width="25" height="25"/>
+    <rect id="Inner_copy_7" data-name="Inner copy 7" class="cls-3" x="267.656" y="342.656" width="25" height="25"/>
+    <rect id="Inner_copy_8" data-name="Inner copy 8" class="cls-3" x="267.656" y="317.656" width="25" height="25"/>
+    <rect id="Inner_copy_9" data-name="Inner copy 9" class="cls-3" x="267.656" y="367.656" width="25" height="25"/>
+    <rect id="Inner_copy_10" data-name="Inner copy 10" class="cls-3" x="292.656" y="367.656" width="25" height="25"/>
+    <rect id="Inner_copy_11" data-name="Inner copy 11" class="cls-3" x="292.656" y="292.656" width="25" height="25"/>
+    <rect id="Inner_copy_12" data-name="Inner copy 12" class="cls-3" x="317.656" y="317.656" width="25" height="25"/>
+  </g>
+</svg>

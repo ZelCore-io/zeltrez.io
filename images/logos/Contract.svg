@@ -1,0 +1,30 @@
+<svg id="Contracts" xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 512 512">
+<defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #232220;
+        stroke-linecap: round;
+        stroke-width: 10px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle id="Main" class="cls-1" cx="255.5" cy="255.5" r="228.5"/>
+  <g id="Contracts-2" data-name="Contracts">
+    <path id="Outer" class="cls-2" d="M208.525,150.634H180.344s-4.552,21.045,12.077,24.756h144.36c7.886-1.254,28.9-34.671-8.052-46.633H187.245s-26.448-1.5-24.731,34.543c0.357,7.3-1.057,25.7,29.907,89.237,11.125,24.914,19.972,46.442,21.856,73.692,0.343,7.16,4.338,57-32.783,57-22.8,1.147-36.572-51.623-6.327-56.421,25.625,2.851,11.5,28.211,11.5,28.211h25.881"/>
+    <path id="Outer2" class="cls-2" d="M182.644,383.225H324.7c12.484-3.178,28.412-11.191,29.332-46.633-0.272-12.047-2.223-51.812-23.58-87.51-17.921-29.622-25.715-62.84-27.032-73.692"/>
+    <path id="Finish" class="cls-2" d="M175.167,326.8h39.11"/>
+    <path id="Finish2" class="cls-2" d="M188.971,128.757c35.814,9.819,19.083,46.633,4.6,46.633"/>
+    <path id="Line1" class="cls-2" d="M202.2,206.479h83.97"/>
+    <path id="Line2" class="cls-2" d="M213.126,235.265H297.1"/>
+    <path id="Line3" class="cls-2" d="M224.629,264.051H308.6"/>
+    <path id="Line4" class="cls-2" d="M236.132,292.837H320.1"/>
+    <path id="Line5" class="cls-2" d="M241.883,321.623h83.971"/>
+    <path id="Line_Short" data-name="Line Short" class="cls-2" d="M241.883,350.409H270.64"/>
+  </g>
+</svg>

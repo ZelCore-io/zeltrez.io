@@ -1,10 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 512 512">
 <defs>
     <style>
-      .cls-1 {
-        mix-blend-mode: screen;
-      }
-
       .cls-2 {
         fill: #c86f35;
       }
@@ -33,7 +29,7 @@
       }
     </style>
   </defs>
-  <g id="ZClassic" class="cls-1">
+  <g id="ZClassic">
     <path id="Main" class="cls-2" d="M11,256c0,135.094,109.906,245,245,245S501,391.094,501,256,391.094,11,256,11,11,120.906,11,256Z"/>
     <g id="ZCL">
       <path id="Z" class="cls-3" d="M267,175H140l-20,42H243ZM369,336H185l92-161h51L260,296H389Z"/>
