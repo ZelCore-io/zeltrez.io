@@ -2002,6 +2002,10 @@ svg.mask {
   transition-timing-function: ease;
 }
 
+.space {
+	padding: 0 14px;
+}
+
 @media screen and (max-width: 736px) {
 	.nav-wrapper .next-button svg {
 		padding: 0.6rem;
