@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="https://zel.cash/css/unified.css"/>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 		<noscript><link rel="stylesheet" href="./assets/css/noscript.css" /></noscript>
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 		<!-- Favicon -->
 		<link href="./images/favicon.ico" rel="shortcut icon"/>
@@ -1324,7 +1325,7 @@
 						<!-- Get Listed -->
 							<article id="getlisted">
 								<h2 class="major">Get Listed</h2>
-								<form id="contact-form" id="contact-form" enctype="text/plain" action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSfTbMx4SCoCgUKiBxg2K92NH7qIJAAK2SrNVGBDbCBDuJ1vyA/formResponse" target="hidden_iframe" class="contact-form" onsubmit="submitted=true;">
+								<form id="contact-form" action="https://zelcore.io/verify.php" class="contact-form" target="hidden_iframe" onsubmit="submitted=true;">
 									<div class="messages"></div>
 									<div class="fields" id="fields">
 										<div class="field form-group">
@@ -1460,8 +1461,9 @@
 											<textarea name="entry.288798762" id="entry.288798762" rows="4"></textarea>
 										</div>
 									</div>
-									<ul class="actions" id="actions">
-										<li><input type="submit" value="Apply" class="primary" /></li>
+									<div class="g-recaptcha" data-sitekey="6LeA8pgUAAAAACGIFqHbNYZ5ejRhWcfgpYSzzcbl" data-callback="captcha_filled" data-expired-callback="captcha_expired"></div>
+									<ul class="actions ma4" id="actions">
+										<li><input id="submitBtn" type="submit" formaction="https://docs.google.com/forms/u/2/d/e/1FAIpQLSfTbMx4SCoCgUKiBxg2K92NH7qIJAAK2SrNVGBDbCBDuJ1vyA/formResponse" value="Apply" class="primary" /></li>
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
 								</form>
@@ -1490,9 +1492,19 @@
       		<script src="https://zel.cash/js/unified.js"></script>
 			<script type="text/javascript">var submitted=false;</script>
 			<script type="text/javascript">
+				var submit = false;
+				$("#submitBtn").prop('disabled', true);
+				function captcha_filled() {
+					submit = true;
+					$("#submitBtn").prop('disabled', false);
+				}
+				function captcha_expired() {
+					submit = false;
+					$("#submitBtn").prop('disabled', true);
+				}
 				$('#contact-form').on('submit', function(e) {
-				$('#contact-form *').fadeOut(500);
-				$('#contact-form').prepend('Thanks for applying, a member of our team will be in contact soon.');
+					$('#contact-form *').fadeOut(500);
+					$('#contact-form').prepend('Thanks for applying, a member of our team will be in contact soon.');
 				});
 			</script>
 
